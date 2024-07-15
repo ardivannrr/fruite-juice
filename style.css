@@ -1,0 +1,492 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Root */
+:root {
+  --clr-bg: #f8fafc;
+  --clr-text: #1e293b;
+  --clr-main: #0ea5e9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  line-height: calc(1em + 0.5rem);
+}
+
+body {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+}
+
+/* Header Style */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0px 1px 5px var(--clr-text);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: var(--clr-bg);
+}
+
+.header .name-store {
+  font-size: 18px;
+  color: inherit;
+  font-weight: 700;
+  cursor: default;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav a {
+  font-size: 13px;
+  color: inherit;
+  margin-left: 8px;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.header nav a:hover {
+  color: var(--clr-main);
+  border-bottom: 2px solid var(--clr-main);
+}
+
+/* Home Style */
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.home .home-image {
+  margin: 70px auto 5px;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.home .home-image img {
+  width: 300px;
+}
+
+.home .home-content {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.home .home-content h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.home .home-content span {
+  color: var(--clr-main);
+}
+
+.home .home-content p {
+  text-align: justify;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+/* Button Style */
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: var(--clr-main);
+  color: var(--clr-bg);
+  border: 1px solid var(--clr-main);
+  border-radius: 28px;
+  box-shadow: 0px 5px 5px rgba(0, 174, 255, 0.667);
+  transition: transform 0.3s linear;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--clr-main);
+  color: var(--clr-bg);
+  border: none;
+  transform: translateY(-5px);
+}
+
+/* Product */
+.product {
+  padding: 70px 20px 20px;
+  background-color: var(--clr-text);
+  color: var(--clr-bg);
+}
+
+.product h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.product p {
+  font-size: 13px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.product .product-items {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.product .product-items .item {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 50px 20px 50px 20px;
+  text-align: center;
+  height: 450px;
+}
+
+.product .product-items .item img {
+  width: 200px;
+  margin-bottom: 10px;
+  background-color: var(--clr-text);
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px var(--clr-main);
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.product .product-items .item img:hover {
+  transform: scale(1.05);
+}
+
+.product .product-items h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product .product-items .item .info {
+  font-size: 13px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.product .product-items .item .harga {
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Kontak */
+.contact {
+  padding: 70px 20px 20px;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.contact form .input {
+  margin-bottom: 20px;
+  /* background-color: yellow; */
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form .input label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.contact form .input input {
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 13px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  transition: all 0.5s linear;
+}
+
+.contact form .input textarea {
+  width: 100%;
+  padding: 7px 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  font-size: 13px;
+  border-radius: 7px;
+  transition: all 0.5s linear;
+}
+
+.contact form .input input:focus,
+.contact form .input textarea:focus {
+  border: 1.5px solid var(--clr-text);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: var(--clr-text);
+  color: var(--clr-bg);
+}
+
+.footer p {
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Media */
+
+/* sm */
+@media screen and (min-width: 640px) {
+  .container {
+    min-width: 640px;
+  }
+}
+/* md */
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+
+  .header {
+    padding: 20px 30px;
+  }
+
+  .header .name-store {
+    font-size: 21px;
+  }
+
+  .header nav a {
+    font-size: 16px;
+  }
+
+  .home {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .home .home-image {
+    margin-top: 0;
+    order: 2;
+  }
+
+  .home .home-content {
+    order: 1;
+  }
+
+  .home .home-content h1 {
+    font-size: 35px;
+  }
+
+  .product {
+    padding: 70px 30px 30px 30px;
+  }
+
+  .product h2,
+  .contact h2 {
+    font-size: 30px;
+  }
+
+  .product p {
+    margin-bottom: 20px;
+  }
+
+  .product .product-items .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .product .product-items .item img {
+    order: 2;
+    width: 300px;
+  }
+
+  .product .product-items .item .item-content {
+    width: 50%;
+  }
+
+  .product .product-items .item .item-content h3 {
+    font-size: 25px;
+  }
+
+  .product .product-items .item .item-content h3,
+  .product .product-items .item .item-content .harga {
+    text-align: left;
+  }
+
+  .contact {
+    padding: 70px 30px 30px;
+  }
+
+  .contact form .input input,
+  .contact form .input textarea {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  .contact form .input label {
+    font-size: 16px;
+  }
+
+  /* Size Paragraf */
+  .home .home-content p,
+  .product p,
+  .product .product-items .item .item-content p,
+  .footer p {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 12px;
+  }
+}
+/* lg */
+@media screen and (min-width: 1024px) {
+  .container {
+    min-width: 1024px;
+  }
+
+  .header .name-store {
+    font-size: 25px;
+  }
+
+  .header nav a {
+    font-size: 18px;
+  }
+
+  .home .home-image img {
+    width: 400px;
+  }
+
+  .product .product-items .item .item-content {
+    width: 60%;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+/* xl */
+@media screen and (min-width: 1280px) {
+  .container {
+    min-width: 1280px;
+  }
+
+  .product .product-items .item .item-content {
+    width: 70%;
+  }
+
+  .home .home-content h1 {
+    font-size: 40px;
+  }
+
+  .product h2,
+  .contact h2 {
+    font-size: 35px;
+  }
+
+  .product .product-items .item .item-content h3 {
+    font-size: 30px;
+  }
+
+  .contact form .input label {
+    font-size: 20px;
+  }
+
+  .contact form .input input,
+  .contact form .input textarea {
+    font-size: 18px;
+    padding: 18px;
+  }
+
+  .home .home-content p,
+  .product p,
+  .product .product-items .item .item-content p,
+  .footer p {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
+/* 2xl */
+@media screen and (min-width: 1536px) {
+  .container {
+    min-width: 1536px;
+  }
+
+  .header .name-store {
+    font-size: 40px;
+  }
+
+  .header nav a {
+    font-size: 25px;
+  }
+
+  .home .home-content h1 {
+    font-size: 70px;
+  }
+
+  .home .home-image img {
+    width: 600px;
+  }
+
+  .product h2,
+  .contact h2 {
+    font-size: 55px;
+  }
+
+  .product .product-items .item img {
+    width: 400px;
+  }
+
+  .product .product-items .item .item-content h3 {
+    font-size: 40px;
+  }
+
+  .contact form .input label {
+    font-size: 25px;
+  }
+
+  .contact form .input input,
+  .contact form .input textarea {
+    padding: 20px;
+    font-size: 22px;
+  }
+
+  .home .home-content p,
+  .product p,
+  .product .product-items .item .item-content p,
+  .footer p {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 20px;
+  }
+}

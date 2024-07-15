@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Gambar Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>A Dev ( Projek 1 ) Fruite Juice</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="container header">
+      <a href="#" class="name-store">🍎FruiteJuice</a>
+      <nav>
+        <a href="#">Beranda</a>
+        <a href="#product">Produk</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+    <!-- Home -->
+    <section class="container home">
+      <div class="home-image">
+        <img src="img/home.png" alt="Fruite Image" />
+      </div>
+      <div class="home-content">
+        <h1>
+          Selamat Datang
+          <span>Fruite Juice</span>
+        </h1>
+        <p>
+          Kami menjual berbagai jus buah segar dan berkualitas tinggi, mulai
+          dari rasa klasik hingga kombinasi unik, semua dibuat dari bahan alami
+          untuk pengalaman minum yang menyegarkan dan menyehatkan.
+        </p>
+        <button type="submit" class="btn">🛒Belanja Sekarang</button>
+      </div>
+    </section>
+    <!-- Product -->
+    <section class="container product" id="product">
+      <h2>Produk</h2>
+      <p class="info">
+        Kami di Fruite Juice menawarkan berbagai jus buah berkualitas tinggi
+        seperti jus jeruk segar, jus apel premium, jus mangga tropis, jus
+        stroberi delight, jus campuran buah, dan jus detox hijau. Semua jus kami
+        dibuat dari bahan alami pilihan, memberikan rasa lezat dan manfaat
+        kesehatan yang optimal.
+      </p>
+      <div class="product-items">
+        <div class="item">
+          <img src="img/jus-stoberi.png" alt="" />
+          <div class="item-content">
+            <h3>Jus Stoberi</h3>
+            <p class="info">
+              Dibuat dari stroberi segar pilihan, jus ini menawarkan rasa manis
+              dan sedikit asam yang menyegarkan. Kaya akan vitamin C dan
+              antioksidan, jus stroberi sangat baik untuk meningkatkan sistem
+              kekebalan tubuh dan kesehatan kulit.
+            </p>
+            <p class="harga">Harga : Rp 8.000</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/jus-apel.png" alt="" />
+          <div class="item-content">
+            <h3>Jus Apel</h3>
+            <p class="info">
+              Jus apel kami dibuat dari apel segar yang dipilih dengan cermat
+              untuk memberikan rasa manis alami dan kesegaran maksimal. Jus ini
+              kaya akan serat dan antioksidan, membantu pencernaan dan menjaga
+              kesehatan jantung.
+            </p>
+            <p class="harga">Harga : Rp 7.000</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/jus-jeruk.png" alt="" />
+          <div class="item-content">
+            <h3>Jus Jeruk</h3>
+            <p class="info">
+              Jus jeruk segar kami penuh dengan vitamin C, memberikan dorongan
+              energi dan meningkatkan sistem kekebalan tubuh. Rasanya yang manis
+              dan asam cocok untuk dinikmati kapan saja, terutama sebagai
+              penyegar di hari yang panas.
+            </p>
+            <p class="harga">Harga : Rp 6.000</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/jus-alpukat.png" alt="" />
+          <div class="item-content">
+            <h3>Jus Alpukat</h3>
+            <p class="info">
+              Jus alpukat kami menawarkan tekstur lembut dan krimi dengan rasa
+              yang kaya dan lezat. Kaya akan lemak sehat, serat, dan berbagai
+              vitamin, jus ini sangat baik untuk kesehatan jantung dan kulit.
+            </p>
+            <p class="harga">Harga : Rp 10.000</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/jus-wortel.png" alt="" />
+          <div class="item-content">
+            <h3>Jus Wortel</h3>
+            <p class="info">
+              Jus wortel segar mengandung beta-karoten yang tinggi, baik untuk
+              kesehatan mata dan kulit. Rasanya yang manis alami membuatnya
+              menjadi minuman yang menyehatkan dan menyegarkan.
+            </p>
+            <p class="harga">Harga : Rp 7.000</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/jus-anggur.png" alt="" />
+          <div class="item-content">
+            <h3>Jus Anggur</h3>
+            <p class="info">
+              Jus anggur kami dibuat dari anggur segar pilihan, memberikan rasa
+              manis yang menyenangkan dan penuh dengan antioksidan. Jus ini
+              membantu menjaga kesehatan jantung dan meningkatkan fungsi
+              kekebalan tubuh.
+            </p>
+            <p class="harga">Harga : Rp 9.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section class="container contact" id="contact">
+      <h2>Kontak Saya</h2>
+      <form action="">
+        <div class="input">
+          <label for="nama">Nama</label>
+          <input
+            type="text"
+            maxlength="50"
+            id="nama"
+            placeholder="Masukkan Nama Kamu"
+            required
+          />
+        </div>
+        <div class="input">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Masukkan Email Kamu"
+            maxlength="50"
+            required
+          />
+        </div>
+        <div class="input">
+          <label for="pesanan">Pesanan</label>
+          <textarea
+            name="pesanan"
+            id="pesanan"
+            cols="30"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <div class="input">
+          <label for="alamat">Alamat</label>
+          <textarea
+            name="alamat"
+            id="alamat"
+            cols="30"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <button class="btn" type="submit">Kirim Pesanan</button>
+      </form>
+    </section>
+    <!-- Footer -->
+    <footer class="container footer">
+      <p>Copyright 2024 @Ardivan Nur Raihan Rahman</p>
+    </footer>
+  </body>
+</html>
